@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/locate_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/loc_logo" />
+
+    <TextView
+        android:id="@+id/locate_dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locate_icon"
+        android:text="5km" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locate_dis"
+        android:src="@drawable/allow_down" />
+
+    <LinearLayout
+        android:id="@+id/category_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/locate_icon"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/waimai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect"
+            android:gravity="center_horizontal"
+            android:onClick="clickCategory"
+            android:text="外卖" />
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect"
+            android:gravity="center_horizontal"
+            android:onClick="clickCategory"
+            android:text="美食" />
+
+        <TextView
+            android:id="@+id/market"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect"
+            android:gravity="center_horizontal"
+            android:onClick="clickCategory"
+            android:text="超市" />
+
+        <TextView
+            android:id="@+id/beautiful"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect"
+            android:gravity="center_horizontal"
+            android:onClick="clickCategory"
+            android:text="丽人" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/locate_icon"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/movie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect"
+            android:gravity="center_horizontal"
+            android:onClick="clickCategory"
+            android:text="电影" />
+
+        <TextView
+            android:id="@+id/funny"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect"
+            android:gravity="center_horizontal"
+            android:onClick="clickCategory"
+            android:text="娱乐" />
+
+        <TextView
+            android:id="@+id/hotel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect"
+            android:gravity="center_horizontal"
+            android:onClick="clickCategory"
+            android:text="酒店" />
+
+        <TextView
+            android:id="@+id/travel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect"
+            android:gravity="center_horizontal"
+            android:onClick="clickCategory"
+            android:text="周边游" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/category_2"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_color" />
+</RelativeLayout>

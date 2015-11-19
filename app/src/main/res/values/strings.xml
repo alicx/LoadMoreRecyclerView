@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading">加载中...</string>
+    <string name="list_mode_list">点我切换模式-列表模式</string>
+    <string name="list_mode_stagger">点我切换模式-图片模式</string>
+    <string name="list_menu">菜单栏todo</string>
+</resources>
